@@ -55,19 +55,19 @@ Definition: You first need to parse the pointString1 (e.g., "-88.331492,32.32414
 
 The code template has loaded the original data (point data, arealm.csv, and rectangle data, zcta510.csv) into DataFrame using tsv format. You don't need to worry about the loading phase.
 
-Range query:
+-> Range query:
 
   select * from point where ST_Contains(point._c0,'-155.940114,19.081331,-155.618917,19.5307')
 
-Range join query:
+-> Range join query:
 
   select * from rectangle,point where ST_Contains(rectangle._c0,point._c0)
 
-Distance query:
+-> Distance query:
 
   select * from point where ST_Within(point._c0,'-88.331492,32.324142',10)
 
-Distance join query:
+-> Distance join query:
 
   select * from point p1, point p2 where ST_Within(p1._c0, p2._c0, 10)
 
