@@ -57,19 +57,19 @@ The code template has loaded the original data (point data, arealm.csv, and rect
 
 Range query:
 
-select * from point where ST_Contains(point._c0,'-155.940114,19.081331,-155.618917,19.5307')
+  select * from point where ST_Contains(point._c0,'-155.940114,19.081331,-155.618917,19.5307')
 
 Range join query:
 
-select * from rectangle,point where ST_Contains(rectangle._c0,point._c0)
+  select * from rectangle,point where ST_Contains(rectangle._c0,point._c0)
 
 Distance query:
 
-select * from point where ST_Within(point._c0,'-88.331492,32.324142',10)
+  select * from point where ST_Within(point._c0,'-88.331492,32.324142',10)
 
 Distance join query:
 
-select * from point p1, point p2 where ST_Within(p1._c0, p2._c0, 10)
+  select * from point p1, point p2 where ST_Within(p1._c0, p2._c0, 10)
 
 
 Run your code on Apache Spark using "spark-submit"
