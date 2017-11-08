@@ -1,4 +1,4 @@
-# Big-Data-Prediction---NYC-taxi-database
+# Big-Data-Prediction-NYC-taxi-database
 
 Load GeoSpark jar into Apache Spark Scala shell
 
