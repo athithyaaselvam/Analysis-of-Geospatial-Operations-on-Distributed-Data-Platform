@@ -1,4 +1,4 @@
-# Big-Data-Prediction-NYC-taxi-database
+# Analysis of Geospatial Operations on Distributed Data Platform
 
 Load GeoSpark jar into Apache Spark Scala shell
 
