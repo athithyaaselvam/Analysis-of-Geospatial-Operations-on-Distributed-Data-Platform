@@ -2,7 +2,7 @@
 
 Load GeoSpark jar into Apache Spark Scala shell
 
-**PHASE 1:**
+# PHASE 1:
 
 1. Create GeoSpark SpatialRDD (PointRDD).
 
@@ -20,7 +20,7 @@ Load GeoSpark jar into Apache Spark Scala shell
   c. Join the PointRDD using R-Tree grid without R-Tree index.
 
 
-**PHASE 2:**
+# PHASE 2:
 
 write two User Defined Functions ST_Contains and ST_Within in SparkSQL and use them to do four spatial queries:
 
@@ -74,7 +74,7 @@ The code template has loaded the original data (point data, arealm.csv, and rect
 
 Run your code on Apache Spark using "spark-submit"
 
-**PHASE 3:**
+# PHASE 3:
 
 1. Hot zone analysis:
 
